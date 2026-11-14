@@ -6,16 +6,24 @@ Miles by KC is the renamed **Uber Miles** project. This repository is the public
 
 ## Install the Android test build
 
-**[Download Miles by KC Test for Android](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/download/v0.1.0-test.1/Miles-by-KC-Android-test.apk)**
+**[Download Miles by KC Test for Android](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/download/v0.1.1-test.2/Miles-by-KC-0.1.1-Android-test.apk)**
 
 1. Open the download link on your Android phone.
-2. Open the downloaded `Miles-by-KC-Android-test.apk` file.
+2. Open the downloaded `Miles-by-KC-0.1.1-Android-test.apk` file.
 3. If Android asks, allow installation from the browser or file manager you used, then tap **Install**.
 4. Open **Miles by KC Test**. Manual trips work without location access; grant location and notifications when testing GPS recording.
 
 Requires **Android 8.0 or newer**. The download is approximately **164 MiB**. No GitHub account or app account is required.
 
-[Release notes and checksum](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/tag/v0.1.0-test.1)
+[Release notes and checksum](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/tag/v0.1.1-test.2)
+
+## Buy Me a Coffee
+
+Version **0.1.1** restores the missing button. Open **Settings** and tap the gold **Buy Me a Coffee** button just below the heading. It opens [KC's support page](https://buymeacoffee.com/run4ourfun) in the phone's browser. Contributions are optional; every mileage feature remains available without payment.
+
+## Updating an earlier test build
+
+**Save your trips first:** end any active shift, open **Reports → Export full backup**, and save the JSON file outside the app. This 0.1.1 installer uses a different test signing key from 0.1.0. To update 0.1.0, uninstall the older **Miles by KC Test** only after saving your backup, install this version, then use **Reports → Import a backup**. Uninstalling erases local app records; a PDF or CSV is not a full backup.
 
 ## What to test
 
