@@ -1,35 +1,23 @@
 # Miles by KC
 
-**Business mileage & trip records — Android test downloads**
+**[Download Miles by KC Test 0.1.3 for Android](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/download/v0.1.3-test.4/Miles-by-KC-0.1.3-Android-test.apk)**
 
-Miles by KC is the renamed **Uber Miles** project. This is the public installer page for that same app; development and its history remain in the private application repository.
+Miles by KC records business mileage and trips. This public installer is the Android test version of the app originally named Uber Miles. It requires Android 8.0 or newer and opens directly on your phone without a GitHub account.
 
-## Before updating an earlier test build
+## What changed in 0.1.3
 
-**Save your trips first.** End any active shift, open **Reports → Export full backup**, and save the JSON file outside the app through the share sheet. Confirm the file is actually saved and accessible before uninstalling. These early test installers use temporary signing keys. The 0.1.2 installer uses a different signing key from 0.1.1 and requires removing the earlier test build before installation.
+An isolated GPS jump used to leave a warning even when a good reading followed immediately. The recorder now skips that spike and continues from the last trusted location. A sustained outage still appears under **Trips → View GPS gaps**. The new behavior applies to new drives.
 
-Uninstall the older **Miles by KC Test** only after the JSON backup is saved. Uninstalling erases local app records. After installing 0.1.2, use **Reports → Import a backup → Choose backup** to restore the saved file. Check the **Backup merged** result and your trips. A PDF or CSV is a report, not a full backup. If exporting fails, keep the existing app installed.
+The Android tests replayed a route with 117 isolated spikes. It finished with zero gap alerts and the expected distance. A separate test with sustained conflicting positions produced one review interval.
 
-## Install version 0.1.2
+## Install the test build
 
-**[Download Miles by KC Test 0.1.2 for Android](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/download/v0.1.2-test.3/Miles-by-KC-0.1.2-Android-test.apk)**
+1. Open the download link above on your Android phone.
+2. Open `Miles-by-KC-0.1.3-Android-test.apk` and tap **Install**.
+3. If Android reports a signing conflict, remove the older **Miles by KC Test** build and install again. Removing the app erases its local records. To keep trips, end the active shift and save a full JSON backup from **Reports → Export full backup** before removing it.
+4. Open **Miles by KC Test**. To restore saved trips, use **Reports → Import a backup → Choose backup**.
 
-1. Open the download link on your Android phone.
-2. Open the downloaded `Miles-by-KC-0.1.2-Android-test.apk`.
-3. If Android asks, allow installation from the browser or file manager you used, then tap **Install**.
-4. Open **Miles by KC Test** and restore your JSON backup if updating.
-
-Requires **Android 8.0 or newer**. No GitHub account or app account is required.
-
-[Release notes, checksums and screen previews](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/tag/v0.1.2-test.3)
-
-[Verified publication results](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/actions/runs/43714022325). The public APK has been checked without a GitHub login; its bytes match the tested build.
-
-## GPS warnings are easier to review
-
-Version **0.1.2** fixes the crowded Trips screen. One counted summary leads to **View GPS gaps**, where warnings are grouped by trip and paged with their individual local times and reasons.
-
-The update also corrects rejected-location and delayed-event handling that could generate extra warnings or disturb a recovered location. Existing warnings and recorded mileage are not rewritten merely by opening the updated app. If continued capture combines overlapping warnings, their original details remain in the audit history. Reviewing the list does not automatically dismiss warnings or invent missing miles.
+[Release notes and SHA-256 checksum](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/releases/tag/v0.1.3-test.4) · [Verified public download](https://github.com/kcmrshll9-ux/miles-by-kc-downloads/actions/runs/44605033854)
 
 ## Buy Me a Coffee
 
